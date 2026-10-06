@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Learnaton — Learn. Practice. Excel.</title>
+
+    <meta
+      name="description"
+      content="Learnaton helps Nigerian students learn school subjects, practice questions, prepare for exams and improve their grades."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="learnton.css" />
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+
+    <nav>
+      <div class="container nav-inner">
+        <a href="#" class="logo">
+          <img src="./gci-logo.png" alt="" />
+          Learnaton
+        </a>
+
+        <div class="nav-links" id="navLinks">
+          <a href="#subjects"> Subjects </a>
+
+          <a href="#exams"> Exam Prep </a>
+        </div>
+
+        <div class="nav-right">
+          <button class="theme-btn" id="themeBtn"></button>
+
+          <a href="#subjects" class="btn btn-primary"> Start Learning </a>
+
+          <button class="menu-btn" id="menuBtn">☰</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>
+            Learn Your Subjects.
+            <span class="gradient"> Ace Your Exams. </span>
+          </h1>
+
+          <p>Master school subjects with simple video lessons</p>
+
+          <div class="hero-buttons">
+            <a href="#subjects" class="btn btn-primary"> Explore Subjects </a>
+          </div>
+
+          <div class="search-wrapper">
+            <input
+              type="text"
+              id="subjectSearch"
+              placeholder="Search Mathematics, Biology, Physics..."
+            />
+
+            <span class="search-icon"> ⌕ </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SUBJECTS ================= -->
+
+      <section id="subjects">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <div class="eyebrow">School Subjects</div>
+
+              <h2>
+                Everything you need
+                <span class="gradient"> to learn. </span>
+              </h2>
+            </div>
+
+            <p>
+              Study important school subjects with clear explanations video
+              guides.
+            </p>
+          </div>
+
+          <div class="subjects-grid" id="subjectsGrid">
+            <!-- Mathematics -->
+
+            <article
+              class="subject-card reveal"
+              data-subject="mathematics math"
+            >
+              <div class="subject-icon">📐</div>
+
+              <h3>Mathematics</h3>
+
+              <p>Numbers, algebra, geometry, statistics, equations and more.</p>
+
+              <span class="subject-link"> Start Learning </span>
+            </article>
+
+            <!-- English -->
+
+            <article
+              class="subject-card reveal"
+              data-subject="english language"
+            >
+              <div class="subject-icon">📚</div>
+
+              <h3>English Language</h3>
+
+              <p>
+                Grammar, comprehension, vocabulary, writing and communication.
+              </p>
+
+              <span class="subject-link"> Start Learning</span>
+            </article>
+
+            <!-- Physics -->
+
+            <article class="subject-card reveal" data-subject="physics">
+              <div class="subject-icon">⚛️</div>
+
+              <h3>Physics</h3>
+
+              <p>
+                Motion, forces, energy, electricity, waves and physical
+                principles.
+              </p>
+
+              <span class="subject-link"> Start Learning</span>
+            </article>
+
+            <!-- Chemistry -->
+
+            <article class="subject-card reveal" data-subject="chemistry">
+              <div class="subject-icon">🧪</div>
+
+              <h3>Chemistry</h3>
+
+              <p>
+                Atoms, reactions, elements, compounds, acids, bases and more.
+              </p>
+
+              <span class="subject-link"> Start Learning </span>
+            </article>
+
+            <!-- Biology -->
+
+            <article class="subject-card reveal" data-subject="biology">
+              <div class="subject-icon">🧬</div>
+
+              <h3>Biology</h3>
+
+              <p>
+                Cells, organisms, genetics, ecology, human biology and life
+                processes.
+              </p>
+
+              <span class="subject-link"> Start Learning </span>
+            </article>
+
+            <!-- Economics -->
+
+            <article class="subject-card reveal" data-subject="economics">
+              <div class="subject-icon">📊</div>
+
+              <h3>Economics</h3>
+
+              <p>
+                Markets, demand, supply, production, trade and economic systems.
+              </p>
+
+              <span class="subject-link"> Start Learning </span>
+            </article>
+
+            <!-- Data Processing -->
+
+            <article class="subject-card reveal" data-subject="data-processing">
+              <div class="subject-icon">💻</div>
+
+              <h3>Data Processing</h3>
+
+              <p>
+                Data analysis, spreadsheets, databases, statistics and
+                information systems.
+              </p>
+
+              <span class="subject-link"> Start Learning </span>
+            </article>
+
+            <!-- Geography -->
+
+            <article class="subject-card reveal" data-subject="geography">
+              <div class="subject-icon">🌍</div>
+
+              <h3>Geography</h3>
+
+              <p>
+                Maps, climate, population, resources, environments and physical
+                geography.
+              </p>
+
+              <span class="subject-link"> Start Learning </span>
+            </article>
+
+            <!-- Agricultural Science -->
+
+            <article
+              class="subject-card reveal"
+              data-subject="agricultural-science"
+            >
+              <div class="subject-icon">🌾</div>
+
+              <h3>Agricultural Science</h3>
+
+              <p>
+                Crops, livestock, soil science, agriculture practices and
+                sustainable farming.
+              </p>
+
+              <span class="subject-link"> Start Learning </span>
+            </article>
+            <!-- Further Mathematics -->
+
+            <article
+              class="subject-card reveal"
+              data-subject="further-mathematics"
+            >
+              <div class="subject-icon">🔢</div>
+
+              <h3>Further Mathematics</h3>
+
+              <p>
+                Advanced topics in mathematics including calculus, matrices,
+                complex numbers and more.
+              </p>
+
+              <span class="subject-link"> Start Learning </span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= TESTIMONIAL ================= -->
+
+      <section id="about">
+        <div class="container">
+          <div class="testimonial reveal">
+            <div class="stars">★★★★★</div>
+
+            <blockquote>
+              “I used to struggle with Mathematics and Physics. The simple
+              explanations and practice questions helped me understand topics
+              much faster.”
+            </blockquote>
+
+            <div class="student">— Daniel, Secondary School Student</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CTA ================= -->
+
+      <section>
+        <div class="container">
+          <div class="cta reveal">
+            <h2>Ready to improve your grades?</h2>
+
+            <p>
+              Choose a subject, start learning and practice until you master it.
+            </p>
+
+            <a href="#subjects" class="btn"> Start Learning </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="logo">
+              <span class="logo-icon"> 🎓 </span>
+
+              Learnaton
+            </div>
+
+            <p>
+              A modern learning platform helping Nigerian students understand
+              school subjects and prepare for exams.
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h4>Subjects</h4>
+
+            <a href="#subjects"> Mathematics </a>
+
+            <a href="#subjects"> English </a>
+
+            <a href="#subjects"> Physics </a>
+
+            <a href="#subjects"> Chemistry </a>
+          </div>
+
+          <div class="footer-column">
+            <h4>Subjects</h4>
+            <a href="#subjects"> Biology </a>
+
+            <a href="#subjects"> Further Mathematics </a>
+
+            <a href="#subjects"> Agricultural Science </a>
+
+            <a href="#subjects"> Data Processing </a>
+          </div>
+
+          <div class="footer-column">
+            <h4>Subjects</h4>
+
+            <a href="#subjects"> Economics </a>
+
+            <a href="#subjects"> Geography </a>
+          </div>
+        </div>
+
+        <div class="copyright">© 2026 GCI-Learn. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+      /* MOBILE MENU */
+
+      const menuBtn = document.getElementById("menuBtn");
+
+      const navLinks = document.getElementById("navLinks");
+
+      menuBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+      });
+
+      /* CLOSE MOBILE MENU */
+
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("open");
+        });
+      });
+
+      /* DARK / LIGHT MODE */
+
+      const themeBtn = document.getElementById("themeBtn");
+
+      themeBtn.addEventListener("click", () => {
+        document.body.classList.toggle("light");
+
+        if (document.body.classList.contains("light")) {
+          themeBtn.textContent = "☀";
+
+          localStorage.setItem("theme", "light");
+        } else {
+          themeBtn.textContent = "☾";
+
+          localStorage.setItem("theme", "dark");
+        }
+      });
+
+      /* REMEMBER THEME */
+
+      if (localStorage.getItem("theme") === "light") {
+        document.body.classList.add("light");
+
+        themeBtn.textContent = "☀";
+      }
+
+      /* SUBJECT SEARCH */
+
+      const searchInput = document.getElementById("subjectSearch");
+
+      const subjectCards = document.querySelectorAll(".subject-card");
+
+      searchInput.addEventListener("input", () => {
+        const search = searchInput.value.toLowerCase().trim();
+
+        subjectCards.forEach((card) => {
+          const subject = card.dataset.subject.toLowerCase();
+
+          const content = card.textContent.toLowerCase();
+
+          if (subject.includes(search) || content.includes(search)) {
+            card.style.display = "";
+          } else {
+            card.style.display = "none";
+          }
+        });
+      });
+
+      /* SCROLL REVEAL */
+
+      const revealElements = document.querySelectorAll(".reveal");
+
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.12,
+        },
+      );
+
+      revealElements.forEach((element) => {
+        revealObserver.observe(element);
+      });
+
+      /* COUNTERS */
+
+      const counters = document.querySelectorAll(".counter");
+
+      const counterObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+
+            const counter = entry.target;
+
+            const target = Number(counter.dataset.target);
+
+            let current = 0;
+
+            const increment = Math.max(1, Math.ceil(target / 70));
+
+            function updateCounter() {
+              current += increment;
+
+              if (current >= target) {
+                counter.textContent =
+                  target.toLocaleString() + (target === 98 ? "%" : "+");
+
+                return;
+              }
+
+              counter.textContent = current.toLocaleString();
+
+              requestAnimationFrame(updateCounter);
+            }
+
+            updateCounter();
+
+            counterObserver.unobserve(counter);
+          });
+        },
+        {
+          threshold: 0.6,
+        },
+      );
+
+      counters.forEach((counter) => {
+        counterObserver.observe(counter);
+      });
+    </script>
+  </body>
+</html>
